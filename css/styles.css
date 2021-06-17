@@ -916,7 +916,7 @@ textarea {
   background-color: #188ce8;
 }
 
-.checkbox-link {
+.checkbox__link {
   color: var(--accent-coloure);
   text-decoration: underline;
   margin-left: 3px;
