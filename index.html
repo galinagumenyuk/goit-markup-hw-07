@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./css/main.min.css"> 
 </head>
 <body >
 
@@ -313,32 +313,32 @@
              <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <form>
                 <div class="form">
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" type="text" name="name" id="name">
                     <svg width="18" height="18" class="form__icon">
                         <use href="./images/icons/symbol-defs.svg#icon-person-new"></use>
                     </svg>
                 </div>
                 <div class="form">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel">
+                    <label class="form__label" for="tel">Телефон</label>
+                    <input class="form__input" type="tel" name="tel" id="tel">
                     <svg width="18" height="18" class="form__icon">
                         <use href="./images/icons/symbol-defs.svg#icon-phone-new"></use>
                     </svg>
                 </div>
                 <div class="form">
-                    <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail">
+                    <label class="form__label" for="mail">Почта</label>
+                    <input class="form__input" type="email" name="mail" id="mail">
                     <svg width="18" height="18" class="form__icon">
                         <use href="./images/icons/symbol-defs.svg#icon-email-new"></use>
                     </svg>
                 </div>
                <div class="form">
                     <label for="feedback">Комментарий</label>
-                    <textarea name="feedback"  placeholder="Введите текст" id="feedback"></textarea>
+                    <textarea class="form__textarea" name="feedback"  placeholder="Введите текст" id="feedback"></textarea>
                </div>
                 <div class="checkbox">
-                    <label> 
+                    <label class="checkbox__label"> 
                         <input class="checkbox__input" type="checkbox" name="accept"><span class="checkbox__icon"></span> Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия договора</a> 
                     </label>
 
