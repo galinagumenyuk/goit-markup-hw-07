@@ -6,43 +6,22 @@
   align-items: center;
 }
 
-.header__nav {
+.nav {
   display: flex;
 }
 
-.header__list {
+.nav__list {
   display: flex;
 }
 
-.header__item {
+.nav__item {
   margin-right: 50px;
 
   &:last-child {
     margin-right: 0px;
   }
 }
-
-.logo {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-
-  color: $accent-coloure;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-.logo--accent {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: $primery-text-coloure;
-}
-
-.header__link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -53,7 +32,7 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $transition-timing-function;
 
   &:hover,
   &:focus,
@@ -79,6 +58,26 @@
   }
 }
 
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  color: $accent-coloure;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo--accent {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $primery-text-coloure;
+}
+
 .contact-info {
   display: flex;
   margin-left: auto;
@@ -96,7 +95,7 @@
   display: flex;
   align-items: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -108,7 +107,7 @@
   fill: #757575;
   margin-right: 10px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms $transition-timing-function;
 
   .contact-info__link:hover &,
   .contact-info__link:focus & {
